@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/19a91d71d9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container mx-auto border border-slate-800 px-5 py-4">
+        <h1 class="text-4xl font-bold py-2 text-yellow-400 text-center">My Text Editor</h1>
+        <div id="button-parent" class="flex justify-between bg-blue-500 px-4 py-2">
+            <div class="gap-8 flex">
+                <button id="bold"><i class="fa-solid fa-bold text-xl"></i></button>
+                <button id="italic"><i class="fa-solid fa-italic text-xl"></i></button>
+                <button id="under-line"><i class="fa-solid fa-underline text-xl"></i></button>
+            </div>
+            <div class="gap-6 flex">
+                <button id="text-left"><i class="fa-solid fa-align-left text-xl"></i></button>
+                <button id="text-center"><i class="fa-solid fa-align-center text-xl"></i></button>
+                <button id="text-justify"><i class="fa-solid fa-align-justify text-xl"></i></button>
+                <button id="text-right"><i class="fa-solid fa-align-right text-xl"></i></button>
+            </div>
+            <div class="flex gap-6">
+                <input id="font-size" class="bg-sky-200 font-semibold w-24 px-1" type="number" placeholder="font-size">
+                <button><i class="fa-solid fa-font"></i></button>
+                <input id="text-color" type="color">
+            </div>
+        </div>
+        <div>
+            <textarea id="text-area" class="for-set-width bg-slate-900 text-white mx-auto w-full mt-1 p-3" placeholder="Write anything here........"></textarea>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
